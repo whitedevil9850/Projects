@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Condensed:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+#nav{
+    
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.3vw;
+}
+#nav img{
+    width: 20vw;
+}
+#nmid{
+    display: flex;
+    gap: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0 5vw 0 0;
+}
+#nbottom{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap:5vh ;
+    text-transform: uppercase;
+}
+#nbottom button{
+    cursor: pointer;
+    color: black;
+    padding: .9vw 1.2vw;
+    text-transform: uppercase;
+    font-size: 1vw;
+    letter-spacing: .01rem;
+    border: none;
+   
+}
+#headings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vw;
+}
+#headings h1{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-size: 8.5vw;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+}
+#headings h1::selection{
+    background-color: white;
+    color: black;
+}
+#headings h1 span{
+    background-color: rgb(137, 48, 48);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 1.5vw 3vw;
+    margin: 0 1.5vw;
+    border: none;
+    border-radius: 50px;
+
+}
+#headings h1 span::selection{
+    background-color: white;
+    color: black;
+}
+#left-img{
+    height: 185px;
+    position: absolute;
+    top: 21%;
+    left: 9%;
+    border: none;
+    border-radius: 10px;
+}
+#right-img{
+    height: 185px;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    border: none;
+    border-radius: 10px;
+}
+#tright-img{
+    z-index: .9;
+    height: 150px;
+    position: absolute;
+    top: 13.5%;
+    right: 25%;
+    border: none;
+    border-radius: 10px;
+}
+#bleft-img{
+    z-index: .9;
+    height: 150px;
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    border: none;
+    border-radius: 10px;
+}
+
+#scroll-btn{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-weight: 500;
+}

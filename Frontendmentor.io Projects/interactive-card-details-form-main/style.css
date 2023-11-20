@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Condensed:wght@200&family=Space+Grotesk&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.left{
+    height: 100%;
+    width: 30%;
+    background:url('./images/bg-main-desktop.png')
+}
+.card{
+    position:absolute;
+    top: 15%;
+    left: 10%;
+    height: 73vh;
+    width: 80vh;
+}
+.uppercard {
+    width: 447px;
+    height: 245px;
+    background:url(./images/bg-card-front.png);
+    object-fit: cover;
+    padding-left: 5%;
+}
+.uppercard > img {
+    position: absolute;
+    top:  5%;
+}
+.cardnumber{
+    height: 6vh;
+    position: relative;
+    top: 55%;
+}
+.cardnumber span{
+   letter-spacing: 5px;
+    font-size: 1.5em;
+    color: white;
+
+}
+.nameanddate {
+    position: relative;
+    top: 60%;
+    height: 5vh;
+    width: 100%;
+
+}
+.nameanddate h1{
+    color: white;
+    height: 100%;
+    width: 93%;
+    display: flex;
+}
+.nameanddate h1 span:nth-child(1){
+    width: 70%;
+
+}
+.nameanddate h1 span:nth-child(2){
+    text-align: end;
+    width: 30%;
+}
+
+.lowercard{
+    width: 447px;
+    height: 245px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+}
+.right{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  hsl(278, 68%, 11%);
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 2%;
+    gap:10px;
+    margin-bottom: -40px;
+}
+.inputs input {
+    width: 368px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(164, 164, 164);
+    padding: 0 2%;
+
+}
+.inputs input:focus{
+    outline: none;
+    border: 1px solid hsl(278, 94%, 30%);
+}
+.datecvv{
+    display: flex;
+    gap: 20px;
+}
+
+#cvv{
+    width: 170px;
+}
+.right button{
+    width: 368px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color:hsl(278, 68%, 11%) ;
+    margin-top: 3%;
+    cursor: pointer;
+}
+.right button:hover{
+    background-color: hsl(278, 94%, 30%);
+}
+.submitted{
+    height:45vh;
+    width: 24vw;
+    display: none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+.thankyou {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+}
+.thankyou h1{
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 3px;
+}
+.thankyoutext{
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    color: hsl(279, 6%, 55%);
+}
+.submitted button{
+    width: 100%;
+    cursor: pointer;
+}
+.submitted button:hover{
+    background-color: hsl(278, 94%, 30%);
+}
+@media screen and (min-width: 350px) and (max-width:450px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+    .left {
+        position: absolute;
+        height: 30%;
+        width: 100%;
+
+    }
+   
+    .lowercard {
+        position: absolute;
+        bottom: 32%;
+        left: 4%;
+        height: 28%;
+        width: 45%;
+        position: relative;
+        object-fit: cover;
+        z-index: 1;
+        
+    }
+    .lowercard img {
+        width: 100%;
+        height: 100%;
+    }
+    .uppercard{
+        position: relative;
+        top: 11%;
+        left: -3%;
+        height: 28%;
+        width: 45%;
+        border-radius: 10px;
+        padding-left: 20px;
+        z-index: 2;
+    }
+    .uppercard > img {
+        position: absolute;
+        top:  4%;
+        height:7%;
+    }
+    .cardnumber{
+        height: 4vh;
+        position: relative;
+        top: 55%;
+    }
+    .cardnumber span{
+       letter-spacing: 5px;
+        font-size: .9rem;
+        color: white;
+    
+    }
+    .nameanddate {
+        position: relative;
+        top: 55%;
+        height: 5vh;
+        width: 100%;
+    
+    }
+    .nameanddate h1{
+
+        color: white;
+        height: 100%;
+        width: 93%;
+        display: flex;
+    }
+    .nameanddate h1 span:nth-child(1){
+        font-size: .8rem;
+
+        width: 70%;
+    
+    }
+    .nameanddate h1 span:nth-child(2){
+        text-align: end;
+        width: 30%;
+    }
+    #year{
+        font-size: .8rem;
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 8%;
+    }
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 10%;
+        gap:10px;
+        margin-bottom: -40px;
+        padding: 0% 1%;
+    }
+    .inputs input {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid rgb(164, 164, 164);
+        padding: 0 2%;
+    
+    }
+    .submitted{
+        height:45vh;
+        width: 80vw;
+        display: none;
+    }
+    .logo{
+        height: 9vh;
+    }
+    .submitted h1{
+        font-size: 1.5em;
+    }
+   
+
+}
